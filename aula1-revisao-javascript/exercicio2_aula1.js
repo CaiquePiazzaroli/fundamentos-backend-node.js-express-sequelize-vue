@@ -8,6 +8,7 @@ var leitor = readline.createInterface({
 
 
 function ask(pergunta, yes, no) {
+    
     leitor.question(
         pergunta,
         (answer) => {
