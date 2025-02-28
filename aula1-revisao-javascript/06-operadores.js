@@ -24,3 +24,14 @@ console.log(v3 % v3) //0 Modulo (resto) da divisao
 console.log(v3 + v3) //6 soma
 console.log(v3 - v3)// 0 Subtrai
 console.log(v2 + v2) //22 pois concatena a string 2
+
+//Comparação
+console.log(v1 < v3) //true
+console.log(v1 <= v3) //true
+console.log(v1 == v3) //False
+console.log(v1 >= v3) //False
+console.log(v1 > v3) //False
+
+//or ou and
+console.log(v1 > v3 || v3 > v2) //v1 é maior que v3 ou v3 é maior que v2? true
+console.log(v1 > v3 && v3 > v2) //v1 é maior que v3 E v3 é maior que v2? false
