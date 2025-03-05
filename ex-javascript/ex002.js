@@ -6,9 +6,9 @@ var leitor = readline.createInterface({
     output: process.stdout
 });
 
+//Utilize arrow functions nos parametros da yes e no na função abaixo
 
 function ask(pergunta, yes, no) {
-    
     leitor.question(
         pergunta,
         (answer) => {

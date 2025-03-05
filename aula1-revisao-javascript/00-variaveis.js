@@ -1,5 +1,6 @@
 //Variáveis e escopo
 
+//Escopo 1
 {
     var global = 2;
     let naoGlobal = 4; //Perceba que nao está sendo utilizada
@@ -9,12 +10,17 @@
     //constante = 4
 }
 
+
+
 //Será impresso no console
-console.log(global)  
+console.log(global); //2
 
 //Nao será impresso - Causara um erro not defined
 //console.log(naoGlobal)
 
 //Não sera impresso - Causará um erro not defined
 //console.log(constante)
+
+
+
 

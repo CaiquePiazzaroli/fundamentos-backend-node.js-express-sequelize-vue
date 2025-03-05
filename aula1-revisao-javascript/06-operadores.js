@@ -1,5 +1,5 @@
 let v1 = 1 //number
-let v2 = "2" //stirng
+let v2 = "2" //string
 let v3 = 3
 console.log(v1++) //1 - pois o código ++ ainda nao foi executado
 console.log(++v1) //3 - pois o código ++ é executado primeiro
@@ -7,10 +7,10 @@ console.log(-v1) //-3
 console.log(--v1) //2
 console.log(v1--) //2
 console.log(v1)// 1
-console.log(typeof(+v2)) //Converte a variável v2 que é uma string para umber
+console.log(typeof(+v2)) //Converte a variável v2 que é uma string para number
 console.log(typeof(v2)) // Volta a ser string
 console.log(~v1) // -2
-console.log(!v1) //false - pois numero interio é trythy
+console.log(!v1) //false - pois numero interio é truthy
 console.log(delete(v1)) //false
 console.log(void(v1)) //Retorna undefined
 

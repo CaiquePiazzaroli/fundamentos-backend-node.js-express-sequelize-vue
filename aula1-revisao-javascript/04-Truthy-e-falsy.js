@@ -1,4 +1,4 @@
-//Existem valores que sal truthy e valores que sao falsy
+//Existem valores que sao truthy e valores que sao falsy
 
 //Valores falsy
 if(!undefined) {

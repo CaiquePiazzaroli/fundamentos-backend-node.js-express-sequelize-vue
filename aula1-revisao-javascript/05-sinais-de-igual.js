@@ -8,4 +8,4 @@ if(3 == '3') {
 }
 
 //Operador com 3 iguais considera o tipo de dado em uma comparação ===
-4 === '4' ? console.log("Nao rodou") : console.log("Quatro numbe nao é igual a quatro string")
+4 === '4' ? console.log("Nao rodou") : console.log("Quatro number nao é igual a quatro string");

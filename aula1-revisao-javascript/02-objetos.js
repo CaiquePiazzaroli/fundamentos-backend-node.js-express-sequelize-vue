@@ -28,3 +28,9 @@ console.log(typeof(o.y.z)) // number
 //Array contem o objeto o
 let a = [o, 4, [5, 6]];
 console.log(a[0].y.z) //3
+
+//Utilizado para percorer um array
+a.forEach((item) => console.log(item));
+
+//Map muito utilizado para realizar operações
+a.map(item => console.log(item));

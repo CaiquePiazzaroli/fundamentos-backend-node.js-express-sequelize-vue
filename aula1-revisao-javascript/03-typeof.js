@@ -3,7 +3,7 @@
 let valor = 13;
 
 if(typeof valor === 'number') {
-    console.log("valor é um number")
+    console.log("valor é um number");
 }
 
 
