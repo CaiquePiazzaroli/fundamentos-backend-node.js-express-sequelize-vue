@@ -26,3 +26,38 @@ class Range {
  }
 
  console.log(r.toString());
+
+
+// Criando classe operação
+class Operacao {
+
+    constructor(n1, n2) {
+        this.numero1 = n1;
+        this.numero2 = n2;
+    }
+
+    soma () {
+        return this.numero1 + this.numero2;
+    }
+
+    subtracao() {
+        return this.numero1 - this.numero2;
+    }
+
+    multiplicacao() {
+        return this.numero1 * this.numero2;
+    }
+
+    divisao() {
+        return this.numero1 / this.numero2;
+    }
+
+}
+
+
+const op = new Operacao(10, 20);
+
+console.log(op.soma()); //30
+console.log(op.subtracao()); //-10
+console.log(op.multiplicacao()); //200
+console.log(op.divisao()); //0.5
