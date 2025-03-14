@@ -17,3 +17,7 @@ console.log(meuArray);//['Meu nome', 'Atribuindo valores', <5 empty items>, 'Out
 
 delete meuArray[1];
 console.log(meuArray);//['Meu nome', <6 empty items>, 'Outro valor', 'Adiciona no final']
+
+console.log(2 in meuArray); //False - pois o indice 2 esta vazio meuArray[2]
+console.log(meuArray)
+console.log(0 in meuArray); //true - pois o indice meuArray[0] possui um valor 'Meu nome'
