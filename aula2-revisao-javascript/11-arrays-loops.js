@@ -1,4 +1,4 @@
-const meuArray = [1, 99, 50, 60, 600];
+const meuArray = [1, 99, 50, 60, 600, 60, 70];
 
 //For
 for(let item of meuArray) {
@@ -54,7 +54,7 @@ console.log(multiplicaItensArray); //5702400000
 console.log([4, 2, ['array', 'dentro', 'de','array']].flat()); //[ 4, 2, 'array', 'dentro', 'de', 'array']
 console.log([4, 2, ['array', ['array dentro do array do array'], 'de','array']].flat()); //[ 4, 2, 'array', [ 'array dentro do array do array' ], 'de', 'array' ]
 
-//Adicionando itens
+//Adicionando e removendo itens
 console.log(meuOutroArray.concat("adicionadno", "novos", "elementos")); //[ 2, 198, 100, 120, 1200, 'adicionadno', 'novos', 'elementos' ] - Nao altera o original
 meuOutroArray.push("Adicionadno", "Com", "Push");
 console.log(meuOutroArray); //[ 2, 198, 100, 120, 1200, 'Adicionadno', 'Com', 'Push' ]
@@ -71,3 +71,18 @@ console.log(meuOutroArray); //[0, 0, 0, 0, 0, 0, 0]
 meuOutroArray.fill("um", 2); //Preenche com 'um' a partir do indice 2
 console.log(meuOutroArray);//[0, 0, 'um','um','um', 'um', 'um']
 
+//Buscando inices com base nos valores do itens
+console.log(meuArray);
+console.log(meuArray.indexOf(60)); //3 - Pois o 60 esta no indice 3
+console.log(meuArray.lastIndexOf(60)); //5 - pois a ultima vez que o 60 aparece é no indice 5
+console.log(meuArray.lastIndexOf("nao existe no vetor")); //-1 pois nao existe esse valor no vetor
+
+//Verificar se um valor existe
+console.log(meuArray.includes("este valor")); //False - Pois 'este valor' nao existe no vetor
+
+//Ordenando vetor, revertendo
+const frutas = ["Maca", "Banana", "Goiaba", "Abobira"];
+console.log(frutas.sort()); //[ 'Abobira', 'Banana', 'Goiaba', 'Maca' ]
+console.log(frutas.reverse()); //[ 'Maca', 'Goiaba', 'Banana', 'Abobira' ]
+console.log(frutas.join("X"));//MacaXGoiabaXBananaXAbobira 
+console.log(frutas.join(' ')); //Maca Goiaba Banana Abobira - Gera uma string com o separado especificado
