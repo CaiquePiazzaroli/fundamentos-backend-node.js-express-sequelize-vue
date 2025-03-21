@@ -1,5 +1,7 @@
 const meuArray = [1, 99, 50, 60, 600, 60, 70];
 
+console.log(meuArray.indexOf(70));
+
 //For
 for(let item of meuArray) {
     console.log(item); //Imprime os numeros do array na tela
