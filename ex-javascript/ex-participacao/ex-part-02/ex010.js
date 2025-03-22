@@ -21,4 +21,4 @@ function toUpperCase(str) {
 }
 
 
-console.log(toUpperCase('caique'))
+console.log(toUpperCase('caique'));

@@ -43,7 +43,9 @@ console.log(meuOutroArray.some(x => x > 1000)); //true //se pelo menos um dos va
 console.log(meuOutroArray.some(isNaN)); //false, pois não existe nenhum valor string
 
 //Soma e multiplicação de itens no array
-const somaItensArray = meuOutroArray.reduce((x,y) => {return x+y}, 0); //Soma cada valor ao seu proximo começando do 0
+const somaItensArray = meuOutroArray.reduce((x,y) => {return x+y}, 0); //Soma cada valor ao seu proximo começando do 0 -
+//Obs, pode receber qualquer tipo de callback, é importante entender que o primeiro parametro 'x' recebe o 0 e o 'y' sempre será
+//O proximo valor no array 
 console.log(somaItensArray); //1620
 
 const somaItensArrayApartirDo7 = meuOutroArray.reduce((x,y) => {return x+y}, 7);
