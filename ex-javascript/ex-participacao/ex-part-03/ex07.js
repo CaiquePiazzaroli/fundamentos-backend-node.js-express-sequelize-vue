@@ -7,22 +7,20 @@ import util from 'node:util';
 function colorLog (message, typelog) {
 
     if(typelog === logger.error) {
-        console.log('error');
         const debugError = util.debuglog('ERROR');
-        debugError(message)
-        console.log('');
+        debugError(logger.log(message, typelog));
     }
 
     if(typelog === logger.warning) {
-        console.log('warning');
-        console.log('');
+        const debugWaring = util.debuglog('WARNING');
+        debugWaring(logger.log(message, typelog));
     }
 
     if(typelog === logger.info) {
-        console.log('info');
-        console.log('');
+        const debugWaring = util.debuglog('INFO');
+        debugWaring(logger.log(message, typelog));
     }
 }
  
 
-colorLog('oi', logger.error);
+colorLog('Erro', logger.info);
