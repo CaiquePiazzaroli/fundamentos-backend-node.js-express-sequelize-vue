@@ -47,14 +47,12 @@ fetch("http://localhost:8080/?type=pessoas")
 
 //Criando uma Promise para setTimeout
 
-// const waitToExecute = new Promise((resolve, reject) => {
-//   const duration = 1000; 
+const waitToExecute = (duration) => new Promise((resolve, reject) => {
+  if(duration < 0) {
+    reject(new Error("Erro por tempo menor que 0"));
+  }
 
-//   if(duration < 0) {
-//     reject(new Error("Erro por tempo menor que 0"));
-//   }
+  setTimeout(resolve, duration); //Espera um segundo antes de mandar o resolve para o then
+});
 
-//   setTimeout(resolve(param), duration); //Espera um segundo antes de mandar o resolve para o then
-// });
-
-// waitToExecute.then((result)=>{console.log("It’s done!" + result)});
+waitToExecute(1000).then(()=>{console.log("It’s done!")});
