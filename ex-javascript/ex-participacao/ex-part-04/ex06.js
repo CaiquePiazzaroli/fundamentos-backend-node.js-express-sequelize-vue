@@ -6,5 +6,4 @@ async function umPorSegundo() {
   await delay().then(() => {console.log("3s");});
 }
 
-
 umPorSegundo();
