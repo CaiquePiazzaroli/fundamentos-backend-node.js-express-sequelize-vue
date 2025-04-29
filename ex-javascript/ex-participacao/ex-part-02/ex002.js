@@ -8,8 +8,8 @@ function deepEqual(a, b) {
     }
   
     // Obtém as chaves dos objetos
-    const keysA = Object.keys(a);
-    const keysB = Object.keys(b);
+    const keysA = Object.keys(a); //[key1, key2]
+    const keysB = Object.keys(b); //[key1, key2]
   
     // Se o número de propriedades for diferente, retorna false
     if (keysA.length !== keysB.length) return false;
